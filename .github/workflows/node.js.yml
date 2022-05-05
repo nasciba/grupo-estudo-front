@@ -9,13 +9,13 @@ on:
   pull_request:
     branches: [main]
 
-  jobs:
-    build:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash
-        working-directory: ./grupo-estudo-front/pokemon-api
+jobs:
+  build:
+   runs-on: ubuntu-latest
+   defaults:
+    run:
+     shell: bash
+     working-directory: ./grupo-estudo-front/pokemon-api
 
     strategy:
       matrix:
