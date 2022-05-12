@@ -1,11 +1,12 @@
+import Header from "./components/Header/Header";
 
 
 function App() {
   return (
     <div >
-      
+      <Header/>
         <p>
-          Edit src/App.js and save to reload.
+          Pokemon API
         </p>
        
     </div>

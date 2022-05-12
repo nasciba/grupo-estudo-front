@@ -1,9 +1,24 @@
 import React from 'react';
-import {render, screen} from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import App from './App';
-describe('App.js', ()=> {
- it('should contain a paragraph', () => {
-    render(<App/>);
-    expect(screen.getByText('Edit src/App.js and save to reload.')).toBeInTheDocument();
- })
-} )
+import Header from './components/Header/Header';
+
+describe('App.js', () => {
+
+   const setup = () => render(<App />);
+
+   beforeEach(() => {
+      // other stuff...
+   });
+
+   it('should contain a header', () => {
+      setup();
+      expect(screen.getByRole("banner")).toBeInTheDocument();
+   })
+
+   it('should contain a paragraph', () => {
+      setup();
+      expect(screen.getByText('Pokemon API')).toBeInTheDocument();
+   })
+
+})
