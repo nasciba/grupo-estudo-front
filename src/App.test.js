@@ -7,18 +7,14 @@ describe('App.js', () => {
 
    const setup = () => render(<App />);
 
-   beforeEach(() => {
-      // other stuff...
-   });
-
    it('should contain a header', () => {
       setup();
       expect(screen.getByRole("banner")).toBeInTheDocument();
    })
 
-   it('should contain a paragraph', () => {
+   it('should contain a footer', () => {
       setup();
-      expect(screen.getByText('Pokemon API')).toBeInTheDocument();
+      expect(screen.getByRole("contentinfo")).toBeInTheDocument();
    })
 
 })
