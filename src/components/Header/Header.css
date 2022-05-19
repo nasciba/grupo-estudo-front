@@ -1,7 +1,7 @@
 Header {
     position: absolute;
     top: 0;
-    width: 1920px;
+    width: 100vw;
     height: 125px;
     background: linear-gradient(180deg, rgba(244, 195, 20, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #CC0000;
     opacity: 0.8;
