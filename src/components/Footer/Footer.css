@@ -1,6 +1,5 @@
 Footer {
-    position: absolute;
-    bottom: 0;
+    grid-area: footer;
     width: 100vw;
     height: 222px;
     background: linear-gradient(180deg, rgba(0, 30, 255, 0.242) 41.15%, rgba(59, 76, 202, 0.44) 100%), #000000;
